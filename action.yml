@@ -1,0 +1,16 @@
+name: 'gh-action-timestamp'
+description: 'An action to obtain a timestamp'
+inputs:
+  format:
+    description: 'date format as defined by the Unix date command'
+    required: true
+    default: '%F.%s'
+outputs:
+  timestamp:
+    description: 'A formatted timestamp'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.format }}
+    
