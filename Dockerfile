@@ -1,4 +1,4 @@
-FROM stracquadaniolab/slim-container:latest
+FROM stracquadaniolab/vanilla:latest
 
 LABEL org.stracquadaniolab.maintainer="gh-action-timestamp"
 LABEL org.stracquadaniolab.version="0.0.1"
